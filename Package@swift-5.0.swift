@@ -6,7 +6,8 @@ pkg.platforms = [
     .macOS(.v10_10), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)
 ]
 pkg.products = [
-    .library(name: "ReSwift", targets: ["ReSwift"])
+    .library(name: "ReSwift", targets: ["ReSwift"]),
+    .library(name: "ReSwift-Dynamic", type: .dynamic, targets: ["ReSwift"])
 ]
 
 let pmk: Target = .target(name: "ReSwift")
